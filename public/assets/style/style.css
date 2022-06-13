@@ -1,4 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Old+Standard+TT&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Old+Standard+TT&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/* General Common Style*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font: normal 16px sans-serif;
+    color: #555;
+    scroll-behavior: smooth !important;
+}
+u1, nav{
+    list-style: nome;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover{
+    opacity: 1;
+}
+hr{
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin-bottom: 80px;
+}
