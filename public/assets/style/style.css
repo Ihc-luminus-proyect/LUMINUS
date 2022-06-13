@@ -15,7 +15,11 @@ html
     scroll-behavior: smooth !important;
 }
 ul, nav{
-    list-style: nome;
+    list-style-type: nome;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 a{
     text-decoration: none;
@@ -26,20 +30,29 @@ a{
 a:hover{
     opacity: 1;
 }
+a.btn{
+    color: black;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #E97810;
+    font-weight: 800;
+    text-align: center;
+}
 hr{
     width: 150px;
     height: 2px;
-    background-color: #2196f3;
+    background-color: #E97810;
     border: 0;
     margin-bottom: 80px;
 }
+
 
 /* Section Common Style */
 
 section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding: 125px 100px;
 }
 
@@ -79,7 +92,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: white;
     padding: 35px 100px 0;
 }
 header h2{
@@ -88,11 +101,17 @@ header h2{
 
 header nav{
     display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 header nav li{
     margin: 0 15px;
 }
-
+header nav a:hover{
+    background-color: #111;
+}
 herder nav li:last-child{
     margin-right:0;
 }
@@ -107,6 +126,65 @@ herder nav li:last-child{
     }
     header h2{
         margin-bottom: 15px;
+    }
+}
+
+/* Her Section */
+.home
+{
+    position: relative ;
+    justify-content: center;
+    min-height: 100vh;
+    color: #414a4f;
+    text-align: center;
+}
+.home .background-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #C5C0B9;
+    z-index: -1;
+}
+.home .background-color:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #414a4f;
+    opacity: 0.75;
+}
+.home h1{
+    font: bold 30px 'Open Sans', sans-serif;
+    margin-bottom: 40px
+}
+
+.home h3{
+    fonr: nomarl 20px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+.home a.btn
+{
+    padding: 20px 46px;
+}
+
+@media (max-width: 800px) {
+    .home{
+        min-height: 600px;
+    }
+    .home h1
+    {
+        font-size: 48px;
+    }
+    .home h3{
+        font-size: 24px;
+    }
+    .hero a.btn{
+        padding: 15px 40px;
     }
 }
 
